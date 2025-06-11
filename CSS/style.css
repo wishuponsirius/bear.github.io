@@ -77,3 +77,31 @@ div ul {
     justify-content: center;
     grid-template-columns: 30% 30% 30%;
 }
+
+.bear-gallery {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+  filter: blur(2px) brightness(150%);
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
